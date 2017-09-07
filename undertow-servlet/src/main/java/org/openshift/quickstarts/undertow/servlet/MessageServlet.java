@@ -46,7 +46,7 @@ public class MessageServlet extends HttpServlet {
     @Override
     protected void doGet(final HttpServletRequest req, final HttpServletResponse resp) throws ServletException, IOException {
         PrintWriter writer = resp.getWriter();
-        writer.write(message + " -v4 - " + InetAddress.getLocalHost().getHostName());
+        writer.write(message + " -v5 - " + InetAddress.getLocalHost().getHostName());
         writer.close();
     }
 
